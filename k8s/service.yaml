@@ -8,5 +8,5 @@ spec:
     app: api-mockok
   ports:
   - protocol: TCP
-    port: 80
+    port: 322
     targetPort: 5555
