@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: api-mockok-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: api-mockok
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5555

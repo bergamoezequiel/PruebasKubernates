@@ -6,7 +6,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY MockOk.py ./
-EXPOSE 5555
+ENV PORT 5555
 ENTRYPOINT [ "python" ] 
 CMD [ "MockOk.py" ] 
 

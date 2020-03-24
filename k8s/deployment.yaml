@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-mockok-deployment
+  labels:
+    app: api-mockok
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: api-mockok
+  template:
+    metadata:
+      labels:
+        app: api-mockok
+    spec:
+      containers:
+      - name: api-mockok
+        image: ezequielb/pruebas:tag2
+        ports:
+        - containerPort: 5555
+        
+        
+        

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-mockok-pod
+  labels:
+    app: api-mockok
+spec:
+  containers:
+  - name: api-mockok
+    image: ezequielb/pruebas:tag1
+    ports:
+    - containerPort: 5555
